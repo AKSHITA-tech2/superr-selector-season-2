@@ -1,0 +1,8 @@
+check,value,passed
+share of overs with exactly 6 legal balls,0.981992373994681,True
+run-outs credited to bowler,0.0,True
+wides counted as balls faced,0.0,True
+byes/leg-byes charged to bowler,0.0,True
+duplicate deliveries,0.0,True
+negative balls remaining,0.0,True
+wickets before > 10,0.0,True
