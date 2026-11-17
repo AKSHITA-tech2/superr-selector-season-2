@@ -1,0 +1,104 @@
+{
+ "matches_in_pack": 883,
+ "matches_analysed": 837,
+ "ipl_matches": 367,
+ "t20i_matches": 470,
+ "excluded_other_matches": 30,
+ "deliveries": 193988,
+ "legal_deliveries": 185692,
+ "competitions": 136,
+ "seasons": [
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "batters": 824,
+ "bowlers": 596,
+ "no_result_matches": 25,
+ "matches_by_season_comp": {
+  "2022": {
+   "IPL": 74,
+   "T20I": 106
+  },
+  "2023": {
+   "IPL": 74,
+   "T20I": 66
+  },
+  "2024": {
+   "IPL": 71,
+   "T20I": 106
+  },
+  "2025": {
+   "IPL": 74,
+   "T20I": 122
+  },
+  "2026": {
+   "IPL": 74,
+   "T20I": 70
+  }
+ },
+ "selected_model": "M0",
+ "selected_model_name": "PE-EB baseline",
+ "metric_desc": {
+  "bat": "net runs per 100 high-pressure balls (runs minus wicket value x dismissals) above the average eligible batter",
+  "bowl": "net runs saved per 100 high-pressure balls (wicket value x wickets minus runs conceded) above the average eligible bowler"
+ },
+ "hp_definition": "hp_composite",
+ "p_high": 0.875,
+ "hp_threshold_percentile": 0.75,
+ "pressure_deliveries": 48624,
+ "pressure_deliveries_leverage": 45277,
+ "mean_li_train": 0.015825895345565992,
+ "li_q75_train": 0.01895211994686076,
+ "fixed_wv": 5.979525488219278,
+ "phase_wv": {
+  "death": 2.1766597084611408,
+  "middle": 5.642401182526681,
+  "powerplay": 8.644020412034545
+ },
+ "eligible_batters": 131,
+ "eligible_bowlers": 172,
+ "top10_stability": [
+  {
+   "role": "bat",
+   "mean_p_top10_of_top10": 0.4600999999999999,
+   "expected_overlap": 4.600999999999999
+  },
+  {
+   "role": "bowl",
+   "mean_p_top10_of_top10": 0.4551,
+   "expected_overlap": 4.551
+  }
+ ],
+ "seed": 2026,
+ "n_boot": 1000,
+ "elig": {
+  "bat": {
+   "min_balls": 250,
+   "min_hp_balls": 60,
+   "min_matches": 12
+  },
+  "bowl": {
+   "min_balls": 300,
+   "min_hp_balls": 60,
+   "min_matches": 12
+  }
+ },
+ "validation_mean_spearman": {
+  "M0": 0.1482172830906463,
+  "M1": 0.12414595254121616,
+  "M2": 0.04322537522527327,
+  "M3": 0.06964552753988076,
+  "M4": 0.07684422008618705
+ },
+ "test_mean_spearman": {
+  "M0": 0.07000865452993073,
+  "M1": 0.008404641379333408,
+  "M2": 0.14878219088183653,
+  "M3": 0.1320949965017412,
+  "M4": 0.09755562168289442
+ },
+ "runtime_sec": 597.0
+}
